@@ -1,0 +1,125 @@
+.form-page {
+    min-height: 100vh;
+    /* background-color: #eeeeee; */
+    background-image: url("../../assets/hotel2.png");
+    background-size: cover;
+    opacity: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+.form-card {
+    width: 600px;
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.form-card h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #222;
+}
+
+.form-card p {
+    margin-top: 8px;
+    margin-bottom: 30px;
+
+    color: #777;
+    font-size: 14px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 12px 14px;
+
+    border: 1px solid #d2d2d2;
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #222;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.form-group input[type="file"] {
+    padding: 10px;
+}
+
+.form-card button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #222;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+}
+
+.form-card button:hover {
+    background-color: #000;
+}
+
+@media (max-width: 650px) {
+
+    .form-card {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}

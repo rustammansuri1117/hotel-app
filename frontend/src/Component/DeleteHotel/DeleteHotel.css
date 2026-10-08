@@ -1,0 +1,172 @@
+.delete-hotel-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.delete-hotel-container h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.delete-hotel-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.delete-hotel-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.delete-hotel-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.delete-hotel-info {
+    padding: 20px;
+}
+
+.delete-hotel-info h2 {
+    margin-bottom: 10px;
+}
+
+.delete-hotel-info p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.delete-hotel-info h3 {
+    margin: 15px 0;
+}
+
+.delete-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background: #444;
+}
+
+/* Success Message */
+
+.delete-success {
+    width: fit-content;
+    margin: 0 auto 25px;
+    padding: 12px 20px;
+    border-radius: 7px;
+    background: #222;
+    color: white;
+}
+
+/* No Hotels */
+
+.no-hotels {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Popup */
+
+.delete-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+}
+
+.delete-popup {
+    width: 90%;
+    max-width: 400px;
+
+    background: white;
+    padding: 30px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.delete-popup h2 {
+    margin-bottom: 10px;
+}
+
+.delete-popup p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.popup-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.popup-buttons button {
+    flex: 1;
+    padding: 12px;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background: #ddd;
+    color: #222;
+}
+
+.confirm-delete-button {
+    background: #222;
+    color: white;
+}
+
+.popup-buttons button:hover {
+    opacity: 0.8;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .delete-hotel-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .delete-hotel-list {
+        grid-template-columns: 1fr;
+    }
+
+    .delete-hotel-container {
+        width: 95%;
+        padding: 10px;
+    }
+}

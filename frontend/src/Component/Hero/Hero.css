@@ -1,0 +1,112 @@
+.hero {
+    height: 250px;
+
+    background-image: url("../../assets/hello.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    text-align: center;
+ 
+    position: relative;
+    top: -20px;
+   
+  
+    
+}
+
+.hero h3 {
+    font-size: 40px;
+    margin: 0;
+    position: relative;
+    top: 20px;
+    color: white;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0 40px;
+    position: relative;
+    top: 20px;
+    color: white    ;
+}
+
+
+.hero-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px ;
+    background-color: white;
+    border-radius: 50px;
+    border: black;
+    border-color: black;
+    top: 24px;
+    position: relative;
+    max-width: 1200px;
+    margin-left: 145px;
+
+  
+}
+
+.hotel-input {
+    width: 300px;
+    padding: 14px;
+
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.location-select {
+    width: 200px;
+    padding: 14px;
+
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.price-select {
+    width: 180px;
+    padding: 14px;
+
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-btn {
+    padding: 14px 25px;
+
+    background-color:white;
+    color: rgb(12, 0, 0);
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+.clear-btn {
+    padding: 14px 25px;
+
+    background-color: white;
+    color: black;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    font-size: 16px;
+}

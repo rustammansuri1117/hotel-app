@@ -1,0 +1,24 @@
+{
+  "name": "hotel-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "REST API for the hotel app (Express + PostgreSQL, native SQL, local image uploads)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "db:init": "node scripts/initDb.js",
+    "db:seed": "node scripts/seed.js"
+  },
+  "engines": {
+    "node": ">=20.11"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "multer": "^2.0.2",
+    "pg": "^8.13.0"
+  }
+}

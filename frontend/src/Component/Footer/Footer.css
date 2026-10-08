@@ -1,0 +1,182 @@
+
+.footer {
+    width: 100%;
+    background: #111;
+    color: white;
+    margin-top: 70px;
+    border-top: 1px solid #222;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 60px 40px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+}
+
+
+.footer-section:first-child h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin: 0 0 18px;
+
+    color: #fff;
+}
+
+.footer-section:first-child h2::after {
+    content: "";
+    display: block;
+
+    width: 45px;
+    height: 3px;
+
+    background: white;
+
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.footer-section:first-child p {
+    max-width: 330px;
+
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.8;
+
+    margin-top: 20px;
+}
+
+
+.footer-section h3 {
+    font-size: 17px;
+
+    margin: 0 0 22px;
+
+    color: white;
+
+    position: relative;
+}
+
+.footer-section h3::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+
+    width: 30px;
+    height: 2px;
+
+    background: #777;
+
+    border-radius: 5px;
+}
+
+
+.footer-section a {
+    display: block;
+
+    width: fit-content;
+
+    margin: 12px 0;
+
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: all 0.25s ease;
+}
+
+.footer-section a:hover {
+    color: white;
+
+    transform: translateX(6px);
+}
+
+
+
+.footer-contact p {
+    color: #aaa;
+
+    font-size: 14px;
+
+    margin: 12px 0;
+
+    transition: 0.2s ease;
+}
+
+.footer-contact p:hover {
+    color: white;
+}
+
+
+.footer-bottom {
+    border-top: 1px solid #292929;
+
+    padding: 22px 20px;
+
+    text-align: center;
+
+    background: #0b0b0b;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 13px;
+
+    letter-spacing: 0.3px;
+}
+
+
+
+@media (max-width: 900px) {
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 50px;
+
+        padding: 50px 30px;
+    }
+
+    .footer-section:first-child {
+        grid-column: 1 / -1;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .footer {
+        margin-top: 50px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding: 45px 25px;
+    }
+
+    .footer-section:first-child {
+        grid-column: auto;
+    }
+
+    .footer-section:first-child h2 {
+        font-size: 26px;
+    }
+
+    .footer-section:first-child p {
+        max-width: 100%;
+    }
+}

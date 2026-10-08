@@ -1,0 +1,99 @@
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;   /* left | links (center) | right */
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: white;
+
+    /* navbar hamesha hero image ke upar rahe (logo kat'na band) */
+    position: relative;
+    z-index: 10;
+}
+
+/* Logo (left) */
+.navbar img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    justify-self: start;
+    mix-blend-mode: multiply;   /* logo ka off-white box hide karta hai */
+}
+
+/* Navigation links (center) */
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #555;
+}
+
+/* Search (right) */
+.srch {
+    justify-self: end;
+    width: 220px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+}
+
+.srch::placeholder {
+    color: black;
+    text-align: center;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+    .navbar {
+        grid-template-columns: auto 1fr;
+        grid-template-areas:
+            "logo  search"
+            "links links";
+        gap: 8px 12px;
+        padding: 10px;
+    }
+
+    .navbar img {
+        grid-area: logo;
+        width: 60px;
+        height: 60px;
+    }
+
+    .srch {
+        grid-area: search;
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .nav-links {
+        grid-area: links;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+}
